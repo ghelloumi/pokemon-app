@@ -1,0 +1,18 @@
+.pokemon__card {
+  margin: 1rem;
+  width: 10rem;
+  height: 2rem;
+  background: white;
+  box-shadow: 0.5rem 0 1rem #bfbfbf;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+
+  &:hover {
+    box-shadow: 0.5rem 0 2rem #525252;
+  }
+}

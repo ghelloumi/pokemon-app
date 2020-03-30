@@ -1,0 +1,16 @@
+@import "./atoms/index.scss";
+@import "./molecules/index.scss";
+@import "./organisms/index.scss";
+@import "./containers/index.scss";
+
+body {
+  margin: 0;
+  font-family: 'Baloo Thambi 2', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fafafa;
+}
+
+.App {
+  text-align: center;
+}

@@ -1,0 +1,19 @@
+.pagination {
+  > div {
+    display: inline-block;
+    padding: .4em .6em;
+    margin: .2em;
+    overflow: hidden;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: all ease .2s;
+    &:hover{
+      background: grey;
+      color: white;
+      transform: translateY(-1px);
+      box-shadow: 2px 3px 15px 0 rgba(164, 176, 190, 0.5);
+    }
+  }
+}
