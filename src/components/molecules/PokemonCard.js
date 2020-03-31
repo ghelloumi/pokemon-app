@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Modal from "../atoms/Modal";
 import PokemonDetails from "../organisms/PokemonDetails";
 import Image from "../atoms/Image";
