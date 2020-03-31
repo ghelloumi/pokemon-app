@@ -7,8 +7,6 @@ const FavouritePokemons = () => {
     const favList = useSelector(state => state.favList);
     const [modal, setModal] = useState(false)
 
-    console.log(modal)
-
     return (
         <div className="favPok">
             <button onClick={() => setModal(true)}>
