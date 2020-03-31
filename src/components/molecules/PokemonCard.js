@@ -9,7 +9,9 @@ const PokemonCard = ({pokemon}) => {
         <div className="pokemon__card" onClick={() => setModal(true)}>
             {name}
             {modal && <Modal close={() => setModal(false)}>
-                <span>{name}</span>
+                <span>
+                    {name}
+                </span>
                 <PokemonDetails pokemonName={name}/>
             </Modal>}
         </div>

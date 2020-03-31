@@ -1,64 +1,48 @@
 .pokemon__details {
   display: flex;
   margin-top: 1rem;
+  flex-direction: column;
+  align-items: baseline;
 
-  &__main {
-    width: 40%;
+  > span {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    > .poster {
-      > a > img {
-        width: 6rem;
-      }
+    strong {
+      color: #656565;
+      margin-right: 1rem;
     }
 
-    > .main__details {
-      display: flex;
-      flex-direction: column;
-
-
-      > div > img {
-        margin: 0.2rem;
-        width: 2rem;
-        height: 1.3rem
-      }
+    > div > .props {
+      font-size: 0.6rem;
+      padding: 0 0.5rem;
+      background: gainsboro;
+      border-radius: 1rem;
+      margin: 0 .2rem;
     }
-  }
-
-  &__content {
-    width: 60%;
-    text-align: justify;
-    padding: 0 1rem;
 
     > div {
-      > h5 {
-        margin: 0;
-      }
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
 
-      > p {
-        font-size: 0.7rem;
-        margin-top: 0.2rem;
+      > span {
+        &:not(.props) {
+          color: #565656;
+        }
+
+        &:not(:first-child):not(.props) {
+          margin-left: 0.4rem;
+        }
       }
 
       > div {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-
-        > img {
-          height: 1rem;
-          margin: 0.5rem;
-        }
-      }
-
-      &.imdb {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-
-        > a > img {
-          height: 2.5rem;
-        }
+        padding: 0.5rem 0.5rem;
+        border-radius: 1rem;
+        margin: 0 0.9rem;
+        font-size: 0.6rem;
       }
     }
   }

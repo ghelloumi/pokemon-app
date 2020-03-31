@@ -24,8 +24,8 @@ const PokemonsList = (props) => {
 
     if (error) {
         return (
-            <div className="pokemons__list error">
-                <span>Error Loading content: {error}</span>
+            <div className="error">
+                <span>Error Loading content</span>
             </div>
         )
     }

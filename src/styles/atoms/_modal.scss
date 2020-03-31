@@ -21,6 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: default;
   @include animateModal(0, 1, 300ms);
 
   &:after {
@@ -40,6 +41,7 @@
     z-index: 1;
     border-radius: 1rem;
     box-shadow: 0 0 1rem #3c3c3c;
+    padding: 1rem;
 
     &__close  {
       height: 2rem;
@@ -50,6 +52,7 @@
 
       > img {
         height: 1.5rem;
+        cursor: pointer;
       }
     }
 
@@ -61,10 +64,11 @@
       > span {
         text-align: initial;
         font-size: 1.5rem;
-        margin-top: -1rem;
+        margin-top: -2.5rem;
         padding: 0 1rem;
         color: #505050;
         font-weight: 600;
+        width: 50%;
       }
     }
   }

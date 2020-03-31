@@ -11,27 +11,25 @@ const Pagination = ({count, pageId}) => {
 
     return (
         <div className="pagination">
-            <Link to='/page/1'>
-                {parseInt(pageId, 10) === 1 ? null : (
+            {parseInt(pageId, 10) !== 1 && <>
+                <Link to='/page/1'>
                     <div>First</div>
-                )}
-            </Link>
-            {parseInt(pageId, 10) !== 1 && (
+                </Link>
                 <Link to={`/page/${parseInt(pageId, 10) - 1}`}>
                     <div>Prev</div>
                 </Link>
-            )}
+            </>}
+
             <div>{parseInt(pageId, 10)}</div>
-            {parseInt(pageId, 10) !== pages && (
+
+            {parseInt(pageId, 10) !== pages && <>
                 <Link to={`/page/${parseInt(pageId, 10) + 1}`}>
                     <div>Next</div>
                 </Link>
-            )}
-            <Link to={`/page/${pages}`}>
-                {parseInt(pageId, 10) === pages ? null : (
+                <Link to={`/page/${pages}`}>
                     <div>Last</div>
-                )}
-            </Link>
+                </Link>
+            </>}
         </div>
     );
 }

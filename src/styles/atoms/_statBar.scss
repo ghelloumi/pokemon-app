@@ -1,0 +1,13 @@
+.statBar{
+  position: relative;
+  height: 0.3rem;
+  width: 10rem;
+  border-radius: 1rem;
+
+  > div {
+    height: 100%;
+    border-radius: inherit;
+    transition: width .2s ease-in;
+  }
+}
+

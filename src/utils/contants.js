@@ -14,6 +14,14 @@ export const ACTIONS = {
 
 export const TEXTS = {
     APP_TITLE: "Pokemon App",
+    SPECIE: "Specie",
+    TYPES: "Types",
+    HEIGHT: "Height",
+    WEIGHT: "Weight",
+    STATS: "Stats",
+    ORDER: "Order",
+    ABILITIES: "Abilities",
+    EXPERIENCE: "Experience",
 }
 
 export const ALTS = {

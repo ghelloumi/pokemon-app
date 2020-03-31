@@ -1,14 +1,20 @@
 .pagination {
-  > div {
-    display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > div, > a {
     padding: .4em .6em;
     margin: .2em;
     overflow: hidden;
-    background: white;
-    border: 1px solid black;
+    background: #efefef;
+    border: 1px solid #c3c3c3;
     border-radius: 5px;
-    cursor:pointer;
+    text-decoration: none;
+    cursor: pointer;
     transition: all ease .2s;
+    font-weight: 600;
+    color: #292929;
     &:hover{
       background: grey;
       color: white;
