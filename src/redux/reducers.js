@@ -13,6 +13,11 @@ const initialPokemonDetailsState = {
     error: null
 }
 
+const initialFavListState = {
+    data: []
+}
+
+
 const pokemonsData = (state = initialPokemonsState, action) => {
     switch (action.type) {
         case ACTIONS.FETCH_POKEMONS_PENDING:
@@ -61,9 +66,27 @@ const pokemonDetailsData = (state = initialPokemonDetailsState, action) => {
     }
 }
 
+const favList = (state = initialFavListState, action) => {
+    switch (action.type) {
+        case ACTIONS.ADD_POKEMON_TO_FAVLIST_ACTION:
+            return {
+                ...state,
+                data: [...state.data, action.name]
+            }
+        case ACTIONS.REMOVE_POKEMON_TO_FAVLIST_ACTION:
+            return {
+                ...state,
+                data: state.data.filter(name => name !== action.name)
+            }
+        default:
+            return state;
+    }
+}
+
 const reducers = combineReducers({
     pokemonsData,
-    pokemonDetailsData
+    pokemonDetailsData,
+    favList
 })
 
 export default reducers

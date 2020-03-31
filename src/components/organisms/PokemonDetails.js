@@ -16,9 +16,9 @@ const PokemonDetails = ({pokemonName}) => {
     }, [dispatch]);
 
 
-    if (pending) {
+    // if (pending) {
         return <Loader/>
-    }
+    // }
 
     if (error) {
         return (

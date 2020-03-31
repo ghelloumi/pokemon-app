@@ -6,7 +6,7 @@ import PokemonCard from "../molecules/PokemonCard";
 import Pagination from "../molecules/Pagination";
 import {RESULTS_PER_PAGE} from "../../config/api.config";
 import {withRouter} from 'react-router-dom';
-
+import FavouritePokemons from "./FavouritePokemons";
 
 const PokemonsList = (props) => {
     const {pending, pokemonsRes, error} = useSelector(state => state.pokemonsData);
@@ -38,6 +38,7 @@ const PokemonsList = (props) => {
                         <PokemonCard key={i} pokemon={pokemon}/>
                     ))}
                 </div>
+                <FavouritePokemons/>
                 <Pagination count={pokemonsRes.count} pageId={pageId}/>
             </>}
         </>

@@ -4,5 +4,13 @@
     padding: 0 1rem;
     flex-direction: column;
     margin-top: 4rem;
+
+    .favPok {
+      margin: 1rem 0;
+
+      > button {
+        @include paginationButtons();
+      }
+    }
   }
 }

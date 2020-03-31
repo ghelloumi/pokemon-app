@@ -41,3 +41,19 @@ export const pokemonDetailsActions = {
         }
     }
 }
+
+// Add Pokemon to favList
+export const pokemonsFavListActions = {
+    addPokemonToFavListAction: (name) => {
+        return {
+            type: ACTIONS.ADD_POKEMON_TO_FAVLIST_ACTION,
+            name
+        }
+    },
+    removePokementFromFavList: (name) => {
+        return {
+            type: ACTIONS.REMOVE_POKEMON_TO_FAVLIST_ACTION,
+            name
+        }
+    }
+}

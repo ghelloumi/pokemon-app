@@ -4,7 +4,7 @@
   height: 4rem;
   padding: 1rem;
   background: white;
-  box-shadow: 0.5rem 0 1rem #bfbfbf;
+  box-shadow:   0 0 1rem #d2d2d2;
   border-radius: 0.5rem;
   overflow: hidden;
   cursor: pointer;
@@ -12,8 +12,20 @@
   justify-content: center;
   align-items: center;
   font-weight: 600;
+  position: relative;
 
   &:hover {
-    box-shadow: 0.5rem 0 2rem #525252;
+    box-shadow:   0 0 1rem #bababa;
+  }
+
+  > span {
+    color: #4a4a4a;
+  }
+
+  > img {
+    height: 2rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
   }
 }
